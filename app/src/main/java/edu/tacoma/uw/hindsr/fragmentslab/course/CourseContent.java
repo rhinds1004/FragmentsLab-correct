@@ -1,9 +1,17 @@
 package edu.tacoma.uw.hindsr.fragmentslab.course;
 
+import android.widget.TextView;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import edu.tacoma.uw.hindsr.R;
+
+
+
 
 /**
  * Helper class for providing sample content for user interfaces created by
@@ -11,7 +19,7 @@ import java.util.Map;
  * <p>
  * TODO: Replace all uses of this class before publishing your app.
  */
-public class CourseContent {
+public class CourseContent implements Serializable{
 
     /**
      * An array of sample (course) items.
@@ -53,10 +61,11 @@ public class CourseContent {
     /**
      * A course item representing a piece of content.
      */
-    public static class CourseItem {
+    public static class CourseItem implements Serializable {
         public final String id;
         public final String title;
         public final String shortDesc;
+
 
         public CourseItem(String id, String title, String shortDesc) {
             this.id = id;
@@ -68,5 +77,8 @@ public class CourseContent {
         public String toString() {
             return title;
         }
+
+
     }
+
 }
