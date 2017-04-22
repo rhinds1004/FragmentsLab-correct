@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import edu.tacoma.uw.hindsr.R;
 import edu.tacoma.uw.hindsr.fragmentslab.CourseFragment.OnListFragmentInteractionListener;
 import edu.tacoma.uw.hindsr.fragmentslab.course.CourseContent.CourseItem;
 
@@ -37,7 +38,7 @@ public class MyCourseRecyclerViewAdapter extends RecyclerView.Adapter<MyCourseRe
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
         holder.mIdView.setText(mValues.get(position).id);
-        holder.mContentView.setText(mValues.get(position).content);
+        holder.mContentView.setText(mValues.get(position).title);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
