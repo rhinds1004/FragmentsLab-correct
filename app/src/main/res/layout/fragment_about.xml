@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.tacoma.uw.hindsr.fragmentslab.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="This is my about screen.
+ This lab was about seeing what the screen size is. If a tablet more two fragments were used. Otherwise the view was replaced when clicking on items" />
+
+</FrameLayout>
